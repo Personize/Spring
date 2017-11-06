@@ -61,7 +61,7 @@ public class TransitionManager: NSObject, UIViewControllerTransitioningDelegate,
             SpringAnimation.springEaseInOut(duration: duration) {
                 fromView.transform = CGAffineTransform(translationX: 0, y: fromView.frame.size.height)
                 toView.transform = CGAffineTransform.identity
-                toView.alpha = 1
+                toView.alpha = 0.6
             }
         }
         

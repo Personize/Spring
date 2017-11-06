@@ -43,7 +43,7 @@ public class TransitionZoom: NSObject, UIViewControllerTransitioningDelegate, UI
                 fromView.transform = CGAffineTransform(scaleX: 0.5, y: 0.5)
                 fromView.alpha = 0
                 toView.transform = CGAffineTransform.identity
-                toView.alpha = 1
+                toView.alpha = 0.6
             }
         }
         else {
@@ -54,7 +54,7 @@ public class TransitionZoom: NSObject, UIViewControllerTransitioningDelegate, UI
                 fromView.transform = CGAffineTransform(scaleX: 2, y: 2)
                 fromView.alpha = 0
                 toView.transform = CGAffineTransform(scaleX: 1, y: 1)
-                toView.alpha = 1
+                toView.alpha = 0.6
             }
         }
         

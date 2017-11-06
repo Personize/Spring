@@ -62,14 +62,14 @@ public extension UIView {
 
         loadingXibView.alpha = 0
         SpringAnimation.spring(duration: 0.7, animations: {
-            loadingXibView.alpha = 1
+            loadingXibView.alpha = 0.6
         })
     }
 
     public func hideLoading() {
 
         if let loadingXibView = self.viewWithTag(LoadingViewConstants.Tag) {
-            loadingXibView.alpha = 1
+            loadingXibView.alpha = 0.6
 
             SpringAnimation.springWithCompletion(duration: 0.7, animations: {
                 loadingXibView.alpha = 0

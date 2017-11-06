@@ -483,7 +483,7 @@ public class Spring : NSObject {
                             {
                                 if _self.animateFrom {
                                     _self.transform = CGAffineTransform.identity
-                                    _self.alpha = 1
+                                    _self.alpha = 0.6
                                 }
                                 else {
                                     let translate = CGAffineTransform(translationX: _self.x, y: _self.y)
@@ -509,14 +509,14 @@ public class Spring : NSObject {
     func reset() {
         x = 0
         y = 0
-        opacity = 1
+        // opacity = 1
     }
     
     func resetAll() {
         x = 0
         y = 0
         animation = ""
-        opacity = 1
+        // opacity = 1
         scaleX = 1
         scaleY = 1
         rotate = 0
